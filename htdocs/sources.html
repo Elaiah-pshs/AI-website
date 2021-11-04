@@ -10,17 +10,37 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="..\css\index.css">
 
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
         <title>Sources</title>
     </head>
     <body>
-        <div id="navbar">
-            <a href="index.html"><img src="../images/logo.png" class="logo"></a>
-            <h3 class="navbar-title">AI: The Inner Workings</h3>
-            <a href="sources.html" class="navbar-link">Sources</a>
-            <a href="uses.html" class="navbar-link">Uses</a>
-            <a href="development.html" class="navbar-link">Development</a>
-            <a href="intro.html" class="navbar-link">Intro</a>
-            <a href="index.html" class="navbar-link">Home</a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">
+                <img src="../images/logo.png" class="active" id="topnav-logo">
+            </a>
+
+            <h3 class="active" id="topnav-title">AI: The Inner Workings</h3>
+
+            <a href="sources.html" class="topnav-link">Sources</a>
+            <a href="uses.html" class="topnav-link">Uses</a>
+            <a href="development.html" class="topnav-link">Development</a>
+            <a href="intro.html" class="topnav-link">Intro</a>
+            <a href="index.html" class="topnav-link">Home</a>
+
+            <a href="javascript:void(0);" class="topnav-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <h1 style="color: white; position: absolute; top: 100px; left: 30px;">Under construction!</h1>
