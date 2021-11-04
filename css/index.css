@@ -146,18 +146,14 @@ i.fa.fa-bars {
 
 .container h3 {
     margin-top: 0px;
-    float: left
 }
 
 .container p {
     text-align: justify;
-    float: left;
-    clear: both;
 }
 
 .container img {
     width: calc(100% - 5px);
-    float: right;
     border-radius: 20px;
 }
 
