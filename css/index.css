@@ -1,50 +1,16 @@
-@media screen and (max-width: 924.562px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
+/*
+Author: Elaiah S. Asperin
+Created: 23 October 2021
+Last Modified: 11 November 2021
+Description: General stylsheet for "AI: The Inner Workings"
+*/
 
-    .topnav a.topnav-icon {
-        float: right;
-        display: block;
-    }
-}
 
-@media screen and (max-width: 924.562px) {
-    .topnav.responsive {
-        position: fixed;
-    }
+/* ========================================================================= */
 
-    .topnav.responsive a.topnav-icon {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
 
-    .topnav.responsive a:nth-child(3) {
-        float: none;
-        display: block;
-        margin-top: 70px;
-        margin-left: 10px;
-        text-align: left;
-        padding-left: 10px;
-        width: calc(100% - 20px);
-        font-size: 16px;
-    }
+/* Element Styles */
 
-    .topnav.responsive a:nth-child(4),
-    .topnav.responsive a:nth-child(5),
-    .topnav.responsive a:nth-child(6),
-    .topnav.responsive a:nth-child(7) {
-        float: none;
-        display: block;
-        margin-top: 5px;
-        margin-left: 10px;
-        text-align: left;
-        padding-left: 10px;
-        width: calc(100% - 20px);
-        font-size: 16px;
-    }
-}
 * {
     color: white;
 }
@@ -71,7 +37,13 @@ hr {
     border-radius: 3px;
 }
 
-.topnav {
+
+/* ========================================================================= */
+
+
+/* Header Styles */
+
+body > header {
     background-color: rgb(7, 30, 61);
     box-sizing: border-box;
     width: 100%;
@@ -81,7 +53,7 @@ hr {
     z-index: 2;
 }
 
-#topnav-logo {
+body > header img {
     width: 50px;
     height: 50px;
     margin-left: 20px;
@@ -89,13 +61,18 @@ hr {
     border-radius: 25px;
 }
 
-#topnav-title {
+body > header > h3 {
     color: white;
     margin: 12.8px 0px 0px 20px;
     float: left;
 }
 
-.topnav-link {
+body > header > nav {
+    width: 550px;
+    float: right;
+}
+
+body > header > nav > a {
     text-align: center;
     text-decoration: none;
     color: white;
@@ -108,7 +85,7 @@ hr {
     border-radius: 14.2px;
 }
 
-.topnav-icon {
+header > a:nth-child(4) {
     display: none;
 }
 
@@ -116,14 +93,20 @@ i.fa.fa-bars {
     font-size: 50px;
 }
 
-#content {
+
+/* ========================================================================= */
+
+
+/* Content Styles */
+
+section {
     box-sizing: border-box;
     width: 100%;
     position: absolute;
     top: 70px;
 }
 
-#title {
+section > header {
     background: url("../images/background.jpg") no-repeat top center;
     background-size: cover;
     width: 100%;
@@ -131,20 +114,20 @@ i.fa.fa-bars {
     position: relative;
 }
 
-#title > h1 {
+section > header > h1 {
     text-align: center;
     font-size: 96px;
     padding-top: 50px;
     margin: 0px;
 }
 
-#title > h2 {
+section > header > h2 {
     text-align: center;
     font-size: 48px;
     font-style: italic;
 }
 
-#title span {
+section > header span {
     position:absolute; 
     width:100%;
     height:100%;
@@ -153,20 +136,26 @@ i.fa.fa-bars {
     z-index: 1;
 }
 
-.container h3 {
+div.container h3 {
     margin-top: 0px;
 }
 
-.container p {
+div.container p {
     text-align: justify;
 }
 
-.container img {
+div.container img {
     width: calc(100% - 5px);
     border-radius: 20px;
 }
 
-#footer {
+
+/* ========================================================================= */
+
+
+/* Footer Styles */
+
+footer {
     background-color: rgb(7, 30, 61);
     box-sizing: border-box;
     width: 100%;
@@ -175,26 +164,73 @@ i.fa.fa-bars {
     margin-top: 40px;
 }
 
-#footer h3 {
+footer > h3 {
     margin: 0px;
     margin-bottom: 10px;
     float: left;
 }
 
-#footer p {
+footer > p {
     margin: 0px;
     clear: both;
 }
 
-#footer a {
-    text-decoration: none;
+footer > a {
     color: white;
+    text-decoration: none;
 }
 
-#footer-logo {
+footer img {
     width: 100px;
     height: 100px;
     margin-top: -108.2px;
     float: right;
     border-radius: 50px;
+}
+
+
+/* ========================================================================= */
+
+
+/* Adaptive Styles */
+
+@media screen and (max-width: 924.562px) {
+    nav {
+        display: none;
+    }
+
+    header > a:nth-child(4) {
+        margin-right: 10px;
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 924.562px) {
+    header.responsive {
+        position: fixed;
+    }
+
+    header.responsive > a:nth-child(4) {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    header.responsive > nav {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header.responsive > nav > a {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        margin-left: 10px;
+        text-align: left;
+        padding-left: 10px;
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
 }

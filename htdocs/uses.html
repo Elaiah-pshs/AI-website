@@ -11,7 +11,7 @@
         <meta name="description" content="A website about AI">
         <meta name="keywords" content="Artificial Intelligence, AI">
         <meta name="date" content="10/23/2021">
-        <meta name="revised" content="11/06/2021">
+        <meta name="revised" content="11/11/2021">
 
         <link rel="icon" href="../images/icon.png">
 
@@ -23,54 +23,63 @@
         <link rel="stylesheet" href="../css/index.css">
 
         <!-- javascript to make the navbar scalable -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                }
-                else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-        <title>Uses</title>
+        <script src="../js/index.js"></script>
+
+        <title>Uses of AI</title>
     </head>
+
     <body>
         <!-- Navigation Bar frozen at the top of the site -->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html">
-                <img src="../images/logo.png" class="active" id="topnav-logo">
+        <header>
+            <a href="index.html" class="active">
+                <img src="../images/logo.png">
             </a>
 
-            <h3 class="active" id="topnav-title">AI: The Inner Workings</h3>
+            <h3>AI: The Inner Workings</h3>
 
-            <a href="#title" class="topnav-link">Uses</a>
-            <a href="development.html" class="topnav-link">Development</a>
-            <a href="myths.html" class="topnav-link">Myths</a>
-            <a href="intro.html" class="topnav-link">Intro</a>
-            <a href="index.html" class="topnav-link">Home</a>
+            <nav>
+                <a href="#top">Uses</a>
+                <a href="development.html">Development</a>
+                <a href="myths.html">Myths</a>
+                <a href="intro.html">Intro</a>
+                <a href="index.html">Home</a>
+            </nav>
 
-            <a href="javascript:void(0);" class="topnav-icon" onclick="myFunction()">
+            <a href="javascript:void(0);" onclick="dropdown()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
-
+        </header>
+        
         <!-- Main contents of the site, from title to footer -->
-        <div id="content">
-            <div id="title">
+        <section>
+            <header>
                 <h1>Uses of AI</h1>
                 <h2>From science to society</h2>
-            </div>
+                <a href="https://www.ai-cube.eu/events/17th-international-conference-on-artificial-intelligence-applications-and-innovations/">
+                    <span></span>
+                </a>
+            </header>
 
-            <div id="footer">
+            <hr class="transition">
+
+            <footer>
                 <h3>Contact me!</h3>
-                <p>Email: <a href="mailto:esasperin@gmail.com">esasperin@gmail.com</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/MedsPogi/">Elaiah S. Asperin</a></p>
-                <p>Twitter: <a href="https://twitter.com/MedsPogi">@MedsPogi</a></p>
+                <p>Email:
+                    <a href="mailto:esasperin@gmail.com">
+                        esasperin@gmail.com
+                    </a>
+                </p>
+                <p>Facebook:
+                    <a href="https://www.facebook.com/MedsPogi/">
+                        Elaiah S. Asperin
+                    </a>
+                </p>
+                <p>Twitter:
+                    <a href="https://twitter.com/MedsPogi">@MedsPogi</a>
+                </p>
                 <p>Discord: Meds Pogi#6105</p>
-                <a href="index.html"><img src="../images/logo.png" id="footer-logo"></a>
-            </div>
-        </div>
+                <a href="index.html"><img src="../images/logo.png"></a>
+            </footer>
+        </section>
     </body>
 </html>
