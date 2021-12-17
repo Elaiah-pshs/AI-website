@@ -1,7 +1,7 @@
 /*
 Author: Elaiah S. Asperin
 Created: 23 October 2021
-Last Modified: 11 November 2021
+Last Modified: 17 December 2021
 Description: General stylsheet for "AI: The Inner Workings"
 */
 
@@ -9,7 +9,17 @@ Description: General stylsheet for "AI: The Inner Workings"
 /* ========================================================================= */
 
 
-/* Element Styles */
+/* Imported Styles */
+
+@import "header.css";
+@import "title.css";
+@import "footer.css";
+
+
+/* ========================================================================= */
+
+
+/* General Styles */
 
 * {
     color: white;
@@ -28,209 +38,12 @@ body {
 hr {
     background-color: white;
     box-sizing: border-box;
-    border: 1px solid white;
+
     width: calc(100% - 200px);
     height: 6px;
+
     margin-top: 40px;
     margin-bottom: 40px;
-    position: relative;
+    border: 1px solid white;
     border-radius: 3px;
-}
-
-
-/* ========================================================================= */
-
-
-/* Header Styles */
-
-body > header {
-    background-color: rgb(7, 30, 61);
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    margin: 0px;
-    position: fixed;
-    z-index: 2;
-}
-
-body > header img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    float: left;
-    border-radius: 25px;
-}
-
-body > header > h3 {
-    color: white;
-    margin: 12.8px 0px 0px 20px;
-    float: left;
-}
-
-body > header > nav {
-    width: 550px;
-    float: right;
-}
-
-body > header > nav > a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background: rgba(6, 80, 122, 0.5);
-    width: 100px;
-    padding: 5px 0px;
-    margin-top: 12.8px;
-    margin-right: 10px;
-    float: right;
-    border-radius: 14.2px;
-}
-
-header > a:nth-child(4) {
-    display: none;
-}
-
-i.fa.fa-bars {
-    font-size: 50px;
-}
-
-
-/* ========================================================================= */
-
-
-/* Content Styles */
-
-section {
-    box-sizing: border-box;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-}
-
-section > header {
-    background: url("../images/background.jpg") no-repeat top center;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
-    position: relative;
-}
-
-section > header > h1 {
-    text-align: center;
-    font-size: 96px;
-    padding-top: 50px;
-    margin: 0px;
-}
-
-section > header > h2 {
-    text-align: center;
-    font-size: 48px;
-    font-style: italic;
-}
-
-section > header span {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
-
-div.container h3 {
-    margin-top: 0px;
-}
-
-div.container p {
-    text-align: justify;
-}
-
-div.container img {
-    width: calc(100% - 5px);
-    border-radius: 20px;
-}
-
-
-/* ========================================================================= */
-
-
-/* Footer Styles */
-
-footer {
-    background-color: rgb(7, 30, 61);
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    margin-top: 40px;
-}
-
-footer > h3 {
-    margin: 0px;
-    margin-bottom: 10px;
-    float: left;
-}
-
-footer > p {
-    margin: 0px;
-    clear: both;
-}
-
-footer > a {
-    color: white;
-    text-decoration: none;
-}
-
-footer img {
-    width: 100px;
-    height: 100px;
-    margin-top: -108.2px;
-    float: right;
-    border-radius: 50px;
-}
-
-
-/* ========================================================================= */
-
-
-/* Adaptive Styles */
-
-@media screen and (max-width: 924.562px) {
-    nav {
-        display: none;
-    }
-
-    header > a:nth-child(4) {
-        margin-right: 10px;
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 924.562px) {
-    header.responsive {
-        position: fixed;
-    }
-
-    header.responsive > a:nth-child(4) {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-
-    header.responsive > nav {
-        display: block;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    header.responsive > nav > a {
-        float: none;
-        display: block;
-        margin-top: 5px;
-        margin-left: 10px;
-        text-align: left;
-        padding-left: 10px;
-        width: calc(100% - 20px);
-        font-size: 16px;
-    }
 }

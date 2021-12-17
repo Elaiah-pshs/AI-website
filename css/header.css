@@ -1,0 +1,109 @@
+/*
+Author: Elaiah S. Asperin
+Created: 17 December 2021
+Last Modified: 17 December 2021
+Description: Header stylesheet for "AI: The Inner Workings"
+*/
+
+
+/* ========================================================================= */
+
+
+/* General Styles */
+
+body > header {
+    background-color: rgb(7, 30, 61);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+body > header img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 25px;
+}
+
+body > header > h3 {
+    color: white;
+    margin: 12.8px 0px 0px 20px;
+    float: left;
+}
+
+body > header > nav {
+    width: 550px;
+    float: right;
+}
+
+body > header > nav > a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(6, 80, 122, 0.5);
+    width: 100px;
+    padding: 5px 0px;
+    margin-top: 12.8px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 14.2px;
+}
+
+header > a:nth-child(4) {
+    display: none;
+}
+
+i.fa.fa-bars {
+    font-size: 50px;
+}
+
+
+/* ========================================================================= */
+
+
+/* Adaptive Styles */
+
+@media screen and (max-width: 924.562px) {
+    nav {
+        display: none;
+    }
+
+    header > a:nth-child(4) {
+        margin-right: 10px;
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 924.562px) {
+    header.responsive {
+        position: fixed;
+    }
+
+    header.responsive > a:nth-child(4) {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    header.responsive > nav {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header.responsive > nav > a {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        margin-left: 10px;
+        text-align: left;
+        padding-left: 10px;
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
+}
