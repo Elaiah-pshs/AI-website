@@ -1,7 +1,7 @@
 /*
 Author: Elaiah S. Asperin
 Created: 17 December 2021
-Last Modified: 17 December 2021
+Last Modified: 18 December 2021
 Description: Title section stylesheet for "AI: The Inner Workings"
 */
 
@@ -11,24 +11,20 @@ Description: Title section stylesheet for "AI: The Inner Workings"
 
 /* General Styles */
 
-section {
-    box-sizing: border-box;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-}
-
 section > header {
     background: url("../images/background.jpg") no-repeat top center;
     background-size: cover;
+
     width: 100%;
     height: 550px;
+
     position: relative;
 }
 
 section > header > h1 {
     text-align: center;
     font-size: 96px;
+
     padding-top: 50px;
     margin: 0px;
 }
@@ -40,9 +36,10 @@ section > header > h2 {
 }
 
 section > header span {
-    position:absolute; 
     width:100%;
     height:100%;
+
+    position:absolute;
     top:0;
     left: 0;
     z-index: 1;
